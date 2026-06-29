@@ -1,0 +1,74 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="English Adventure RPG - Learn English through adventure." />
+  <meta name="theme-color" content="#6bb7ff" />
+  <title>English Adventure RPG</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- App Root -->
+  <div class="app-shell">
+    <!-- Background Layer -->
+    <div class="background-layer" aria-hidden="true"></div>
+
+    <!-- Main Content -->
+    <main class="home-screen" role="main">
+      <!-- Top Bar -->
+      <header class="home-screen__header">
+        <a class="game-logo" aria-label="English Adventure RPG logo">
+          <div class="game-logo__icon" aria-hidden="true">
+            <span class="game-logo__icon-mark">E</span>
+          </div>
+          <div class="game-logo__text">
+            <span class="game-logo__title">English Adventure RPG</span>
+            <span class="game-logo__tagline">Fantasy learning quest</span>
+          </div>
+        </a>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero-section" aria-labelledby="game-title">
+        <div class="hero-section__content">
+          <p class="hero-section__eyebrow">Welcome, young adventurer!</p>
+          <h1 id="game-title" class="hero-section__title">English Adventure RPG</h1>
+          <p class="hero-section__subtitle">
+            Learn English through Adventure.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions" aria-label="Main actions">
+            <button type="button" class="game-button game-button--primary" data-action="start-adventure">
+              Start Adventure
+            </button>
+            <button type="button" class="game-button game-button--secondary" data-action="continue">
+              Continue
+            </button>
+            <button type="button" class="game-button game-button--secondary" data-action="settings">
+              Settings
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Character -->
+        <div class="hero-character" aria-hidden="true"></div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="home-screen__footer">
+        <small>
+            Version 0.1
+        </small>
+      </footer>
+    </main>
+  </div>
+
+<script src="./js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* ============================================================
+   English Adventure RPG
+   Design Tokens — variables.css
+   Single source of truth for the design system.
+   Only :root custom properties. No component/layout styles.
+   ============================================================ */
+
+:root {
+  /* ----------------------------------------------------------
+     1. COLOR TOKENS
+     ---------------------------------------------------------- */
+  --color-primary: #3da9fc;   /* Adventure Blue */
+  --color-secondary: #5bd46d; /* Grass Green (UI) */
+  --color-success: #22c55e;   /* Success State / Correct / Level Up */
+  --color-accent: #ffc93c;    /* Quest Gold */
+  --color-magic: #9b5de5;     /* Magic Purple */
+  --color-danger: #ff6b6b;    /* Danger Red */
+  --color-ink: #1f2a44;       /* Text Dark */
+  --color-cloud: #f4f8ff;     /* Surface Light */
+
+  /* ----------------------------------------------------------
+     2. TYPOGRAPHY TOKENS
+     ---------------------------------------------------------- */
+  /* Font Family */
+  --font-family-base: 'Fredoka', system-ui, -apple-system, sans-serif;
+
+  /* Font Weight */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Font Size */
+  --font-size-h1: 2.5rem;       /* 40px — Main Title */
+  --font-size-h2: 2rem;         /* 32px — Section Heading */
+  --font-size-h3: 1.5rem;       /* 24px — Subheading */
+  --font-size-body: 1rem;       /* 16px — Body text */
+  --font-size-caption: 0.875rem;/* 14px — Caption / small */
+  --font-size-button: 1.125rem; /* 18px — Button label */
+
+  /* Line Height */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* ----------------------------------------------------------
+     3. SPACING TOKENS (8pt system)
+     ---------------------------------------------------------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 64px;
+
+  /* ----------------------------------------------------------
+     4. BORDER RADIUS TOKENS
+     ---------------------------------------------------------- */
+  --radius-sm: 8px;
+  --radius-base: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* ----------------------------------------------------------
+     5. BORDER WIDTH TOKENS
+     ---------------------------------------------------------- */
+  --border-width-thin: 2px;
+  --border-width-medium: 3px;
+  --border-width-thick: 4px;
+
+  /* ----------------------------------------------------------
+     6. SHADOW TOKENS
+     Chunky Fantasy RPG style — solid offset bottom edge
+     gives a thick, "pressable" 3D block feel (not Material/Bootstrap).
+     ---------------------------------------------------------- */
+  --shadow-sm: 0 3px 0 rgba(31, 42, 68, 0.25);
+  --shadow-md: 0 5px 0 rgba(31, 42, 68, 0.28), 0 6px 10px rgba(31, 42, 68, 0.18);
+  --shadow-lg: 0 8px 0 rgba(31, 42, 68, 0.30), 0 12px 20px rgba(31, 42, 68, 0.22);
+
+  /* ----------------------------------------------------------
+     7. ELEVATION TOKENS
+     ---------------------------------------------------------- */
+  --elevation-0: none;
+  --elevation-1: 0 3px 0 rgba(31, 42, 68, 0.22), 0 2px 4px rgba(31, 42, 68, 0.12);
+  --elevation-2: 0 5px 0 rgba(31, 42, 68, 0.24), 0 6px 12px rgba(31, 42, 68, 0.16);
+  --elevation-3: 0 8px 0 rgba(31, 42, 68, 0.26), 0 12px 24px rgba(31, 42, 68, 0.20);
+
+  /* ----------------------------------------------------------
+     8. TRANSITION TOKENS
+     ---------------------------------------------------------- */
+  --transition-fast: 150ms ease-out;    /* Hover */
+  --transition-normal: 200ms ease-out;  /* Button */
+  --transition-slow: 500ms ease-in-out; /* Screen Transition */
+
+  /* ----------------------------------------------------------
+     9. Z-INDEX TOKENS
+     ---------------------------------------------------------- */
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-modal: 1000;
+  --z-toast: 2000;
+
+  /* ----------------------------------------------------------
+     10. CONTAINER TOKEN
+     ---------------------------------------------------------- */
+  --container-max-width: 1200px;
+
+  /* ----------------------------------------------------------
+     11. BREAKPOINT TOKENS
+     NOTE: Declared for reference only.
+     CSS Custom Properties do NOT work inside @media queries,
+     so these values must be hard-coded in responsive.css.
+     ---------------------------------------------------------- */
+  --breakpoint-mobile: 480px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+}
